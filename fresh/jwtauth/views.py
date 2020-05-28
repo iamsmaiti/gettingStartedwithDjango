@@ -3,7 +3,9 @@ from rest_framework import permissions
 from rest_framework import response, decorators, permissions, status
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import UserCreateSerializer
+
 User = get_user_model()
+
 @decorators.api_view(['POST'])
 @decorators.permission_classes([permissions.AllowAny])
 def registration(request):

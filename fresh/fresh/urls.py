@@ -23,8 +23,6 @@ urlpatterns = [
     path('product/',include('product.urls')),
     path('auth/', include('rest_framework.urls')),
     path('api/',include('user.urls')),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain'),
-    path('api/token/refresh/', TokenRefreshView.as_view, name='token_refresh'),
     path('api/jwtauth/', include('jwtauth.urls'), name='jwtauth'),
     path('api/docs/', schema_view),
 ]
