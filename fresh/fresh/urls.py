@@ -21,6 +21,7 @@ schema_view = get_swagger_view(title="News Contents API")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/',include('product.urls')),
+    path('cart/',include('cart.urls')),
     path('auth/', include('rest_framework.urls')),
     path('api/',include('user.urls')),
     path('api/jwtauth/', include('jwtauth.urls'), name='jwtauth'),
