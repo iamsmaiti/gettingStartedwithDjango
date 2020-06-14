@@ -9,9 +9,9 @@ from product.models import Item
 
 class OrderProduct(models.Model):
     items = models.ManyToManyField(Item, blank=True )
-    total = models.DecimalField(default=0.00, decimal_places=2, max_digits=10)
+    total = models.DecimalField(default=0.00, max_digits=65, decimal_places=2)
     timestamp = models.DateTimeField(auto_now_add=True, auto_now=False )
-    active = models.BooleanField(default=True)
+    
 
     def __str__(self):
     	return "OrderProduct id: %s" %(self.id)
