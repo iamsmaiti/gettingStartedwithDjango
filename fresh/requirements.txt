@@ -17,7 +17,7 @@ MarkupSafe==1.1.1
 mysql-connector==2.2.9
 mysqlclient @ file:///C:/Users/Santanu/project/fresh/mysqlclient-1.4.6-cp38-cp38-win32.whl
 openapi-codec==1.3.2
-Pillow==7.1.2
+Pillow==8.2.0
 psycopg2==2.8.5
 PyJWT==1.7.1
 pytz==2019.3
